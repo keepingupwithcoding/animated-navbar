@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0px;
+  background: white;
+}
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: rgb(89, 236, 217);
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+#home {
+  background: linear-gradient(to right top, #f46b45, #eea849);
+}
+#project {
+  background: linear-gradient(to right top, #3c89b9, #6567cc);
+}
+#contact {
+  background: linear-gradient(to right top, #e53935, #e35d5b);
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right top, #f46b45, #eea849);
+  transform: scale(1.6);
+  border-radius: 3px;
+}

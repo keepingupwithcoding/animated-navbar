@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <title>Fluid Navbar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Dev Ompa</h1>
+        <ul>
+          <li><a data-page="home" href="#home">Home</a></li>
+          <li><a data-page="project" href="#project">Project</a></li>
+          <li><a data-page="contact" href="#contact">Contact</a></li>
+          <div class="bubble"></div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section data-index="0" id="home">
+        <h2>Home</h2>
+      </section>
+      <section data-index="1" id="project">
+        <h2>Project</h2>
+      </section>
+      <section data-index="2" id="contact">
+        <h2>Contact</h2>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
